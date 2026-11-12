@@ -2,6 +2,11 @@
 
 All notable changes to the library will be documented in this file.
 
+## vX.X.X (Month DD, YYYY)
+
+- Fix `setFieldInput` to keep the dirty state of a field array whose items were reordered, removed, inserted or replaced when the input of the array or of a parent field is set
+- Fix `setFieldInput` to let the new item of a regrown index of a field array take the place of the start item of that index, so an array that is set back to its start input is no longer detected as dirty when a nested field is set afterwards
+
 ## v1.1.0 (October 31, 2026)
 
 - Add HonoX framework adapter and `@formisch/core/honox` build output that reuses the React signal implementation (issue #175)
